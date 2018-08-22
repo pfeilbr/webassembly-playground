@@ -4,6 +4,7 @@ based on [Run wast (WebAssembly) in node](https://gist.github.com/kanaka/3c9caf3
 
 > be sure to install prerequisites from gist
 
-## Running
+## Steps
 
-`node ./runwasm.js addTwo.wasm addTwo 2 3`
+1. compile [wast](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format) to `wasm`. `wat2wasm addTwo.wast`
+2. run. `node ./runwasm.js addTwo.wasm addTwo 2 3`
