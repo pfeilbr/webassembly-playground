@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "typeinfo": "cpp",
+        "iostream": "cpp"
+    },
+    "C_Cpp.default.includePath": ["/Users/brianpfeil/dev/emsdk/emscripten/1.38.11/system/include"]
+}
