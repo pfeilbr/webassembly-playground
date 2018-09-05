@@ -15,6 +15,14 @@
         log('lerp result: ' + Module.lerp(1, 2, 0.5));
         Module.echo("hello from echo");
         log(Module.greeting("Brian"));
+
+        var instance = new Module.MyClass(10, "hello");
+        instance.incrementX();
+        log(`instance.x = ${instance.x}`); // 11
+        instance.x = 20; // 20
+        log(`instance.x = ${instance.x}`); // 20
+        log(`Module.MyClass.getStringFromInstance(instance) = ${Module.MyClass.getStringFromInstance(instance)}`); // "hello"
+        instance.delete();
       }
     };
   </script>
