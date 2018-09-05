@@ -1,11 +1,20 @@
 <!doctype html>
 <html>
+    <body>
+        <strong>Log Output</strong>
+        <pre id="log"></pre>
+        <em>be sure to open console for additional output</em>
+    </body>
   <script>
+      function log(s) {
+          const logEl = document.getElementById('log')
+          logEl.textContent = logEl.textContent + s + "\n";
+      }
     var Module = {
       onRuntimeInitialized: function() {
-        console.log('lerp result: ' + Module.lerp(1, 2, 0.5));
+        log('lerp result: ' + Module.lerp(1, 2, 0.5));
         Module.echo("hello from echo");
-        console.log(Module.greeting("Brian"));
+        log(Module.greeting("Brian"));
       }
     };
   </script>
